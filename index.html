@@ -8,19 +8,25 @@
     <meta name="keywords" content="stock trading game, stock market game, fantasy stock trading app, stock challenges app, Android stock trading game, stock market simulator, practice stock trading, stock picking game, learn stock market app">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Stocksathon">
-    <link rel="canonical" href="https://stockathon.com/">
+    <link rel="canonical" href="https://stocksathon.com/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Stocksathon - Free Stock Trading Game for Android">
     <meta property="og:description" content="Pick real stocks. Track real prices. Compete on leaderboards. No real money involved.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://stockathon.com/">
+    <meta property="og:url" content="https://stocksathon.com/">
     <meta property="og:site_name" content="Stocksathon">
+    <meta property="og:image" content="https://stocksathon.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Stocksathon - Free Stock Trading Game">
     <meta name="twitter:description" content="Pick real stocks. Track real prices. Compete on leaderboards. Free Android app.">
+    <meta name="twitter:image" content="https://stocksathon.com/og-image.png">
+    <meta name="twitter:image:alt" content="Stocksathon - Stock Trading Game App Interface">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -542,6 +548,64 @@
         footer nav a:hover {
             color: var(--text);
         }
+
+        /* App Screenshot */
+        .screenshot-section {
+            padding: 80px 0;
+        }
+
+        @media (max-width: 640px) {
+            .screenshot-section {
+                padding: 60px 0;
+            }
+        }
+
+        .screenshot-section h2 {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .screenshot-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .screenshot-wrapper {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .screenshot-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 255, 102, 0.15), 0 0 1px rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 102, 0.2);
+        }
+
+        .screenshot-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(0, 255, 102, 0.08) 0%, transparent 70%);
+            border-radius: 20px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @media (max-width: 640px) {
+            .screenshot-img {
+                border-radius: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -643,6 +707,26 @@
                             <h3>Simple Interface</h3>
                             <p>No complicated charts or indicators. Just pick stocks and track performance.</p>
                         </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- App Screenshot -->
+            <section class="screenshot-section" id="app-preview">
+                <div class="container">
+                    <h2>See It In Action</h2>
+                    <div class="screenshot-container">
+                        <div class="screenshot-wrapper">
+                            <div class="screenshot-glow"></div>
+                            <img 
+                                src="./screenshot.png" 
+                                alt="Stocksathon app interface showing stock picking and leaderboard features"
+                                class="screenshot-img"
+                                loading="lazy"
+                                width="600"
+                                height="1200"
+                            >
+                        </div>
                     </div>
                 </div>
             </section>
